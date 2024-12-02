@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezentare resurse de calcul</title>
+    <style>
+        /* Stiluri generale */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Fundal gri deschis pentru întreaga pagină */
+            color: #333; /* Culoare text generală (gri închis) */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50; /* Culoare de fundal roz pentru header */
+            color: white; /* Culoare neagra pentru text */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 1;
+        }
+
+        /* Navigație */
+        nav {
+            background-color: #333; /* Fundal alb pentru bara de navigare */
+            color: white; /* Culoare text alb */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none; /* Elimină punctele din lista */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block; /* Aranjează elementele pe orizontală */
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white; /* Culoare albă pentru linkuri */
+            text-decoration: none; /* Elimină sublinierea din linkuri */
+        }
+
+        nav a:hover {
+            color: #ff6347; /* Culoare roșie când treci cu mouse-ul peste link */
+        }
+
+        /* Secțiune Resurse de calcul */
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff; /* Fundal alb pentru fiecare secțiune */
+            border-radius: 5px; /* Colțuri rotunjite pentru secțiuni */
+        }
+
+        section h2 {
+            color: #4CAF50; /* Culoare verde pentru titluri de secțiuni */
+        }
+
+        section p {
+            font-size: 1.1em;
+        }
+
+        /* Tabel resurse de calcul */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Colapsează marginile tabelului */
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd; /* Bordură gri pentru tabel */
+        }
+
+        th {
+            background-color: #4CAF50; /* Fundal verde pentru antetul tabelului */
+            color: white; /* Culoare albă pentru textul din antetul tabelului */
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Secțiune Monitorizare resurse */
+        #monitorizare {
+            background-color: #f9f9f9; /* Fundal gri deschis pentru secțiunea de monitorizare */
+            border: 1px solid #ddd; /* Bordură gri */
+        }
+
+        #monitorizare p {
+            font-size: 1.1em;
+        }
+
+        .resurse-images img {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Secțiune Conexiune la rețea */
+        #conexiune {
+            background-color: #e9f7ef; /* Fundal verde deschis pentru secțiunea de conexiune */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #conexiune ul {
+            list-style-type: none; /* Elimină punctele din lista */
+            padding: 0;
+        }
+
+        #conexiune li {
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333; /* Fundal negru pentru footer */
+            color: white; /* Text alb pentru footer */
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Media Queries pentru ecrane mici */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Prezentarea resurselor de calcul și acces la internet</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#resurse">Resurse de calcul</a></li>
+            <li><a href="#monitorizare">Monitorizare resurse</a></li>
+            <li><a href="#conexiune">Conexiune la rețea</a></li>
+        </ul>
+    </nav>
+
+    <!-- Secțiunea Resurse de calcul -->
+    <section id="resurse">
+        <h2>Resurse de calcul</h2>
+        <p>Acestea sunt resursele hardware și software pe care le folosesc în prezent pentru activitățile zilnice.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Componentă</th>
+                    <th>Descriere</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Procesor</td>
+                    <td>Intel Core i7 9700K (8 nuclee, 3.60 GHz)</td>
+                </tr>
+                <tr>
+                    <td>Memorie RAM</td>
+                    <td>16GB DDR4</td>
+                </tr>
+                <tr>
+                    <td>Stocare</td>
+                    <td>SSD 500GB (Samsung EVO 860)</td>
+                </tr>
+                <tr>
+                    <td>Sistem Operare</td>
+                    <td>Windows 7 Pro</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Secțiunea Monitorizare resurse -->
+    <section id="monitorizare">
+        <h2>Monitorizare resurse</h2>
+        <p>În timpul utilizării aplicației GOOGLE, am observat că: Utilizare CPU: 15% din procesor.</p>
+        
+        <!-- Imagini pentru monitorizare resurse -->
+        <div class="resurse-images">
+            <img src="cpu.png" alt="Monitorizare resurse - CPU" style="display:block;">
+            <img src="mem.png" alt="Monitorizare resurse - Memorie" style="display:none;">
+        </div>
+    </section>
+
+    <!-- Secțiunea Conexiune la rețea -->
+    <section id="conexiune">
+        <h2>Conexiune la rețea</h2>
+        <p>Informații despre conexiunea mea la internet:</p>
+        <ul>
+            <li><strong>Tip conexiune:</strong> Fibra optică</li>
+            <li><strong>Viteză de descărcare:</strong> 1 Gbps</li>
+            <li><strong>Viteză de încărcare:</strong> 500 Mbps</li>
+            <li><strong>IP public:</strong> 192.168.1.1</li>
+            <li><strong>Porturi deschise:</strong> 80, 443 (HTTP, HTTPS)</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact: alexandraale2005@yahoo.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
